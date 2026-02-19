@@ -19,6 +19,7 @@ Powershell Script packaged as an EXE that is able to map and un-map user account
 ## Packaging as an EXE
 - If you have to update the application you first have to edit the powershell script and then use a quick downloadable powershell module **PS2EXE**.
 - You will run the following commands in PowerShell below in order to convert the .ps1 file to an EXE
+
     `Install-Module ps2exe -Scope CurrentUser`
 
     `powershell -ExecutionPolicy Bypass`
