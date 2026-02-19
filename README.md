@@ -18,8 +18,13 @@ Powershell Script packaged as an EXE that is able to map and un-map user account
 
 ## Packaging as an EXE
 - If you have to update the application you first have to edit the powershell script and then use a quick downloadable powershell module **PS2EXE**.
-- You will run the following commands below in order to convert the .ps1 file to an EXE
+- You will run the following commands in PowerShell below in order to convert the .ps1 file to an EXE
     `Install-Module ps2exe -Scope CurrentUser`
-    `-ExecutionPolicy Bypass -Command "ps2exe .\NASLogout.ps1 .\NASAccess.exe -iconFile .\tcs.ico"`
+
+    `powershell -ExecutionPolicy Bypass`
+
+    `Import-Module ps2exe`
+  
+    `ps2exe .\NASLogout.ps1 .\NASAccess.exe -iconFile .\tcs.ico`
   
    - The .\ is telling powershell to run and deposit the files in the current running directory, either put the files needed in the current running directory or update the command to reflect the directory the files are in
