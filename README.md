@@ -21,4 +21,5 @@ Powershell Script packaged as an EXE that is able to map and un-map user account
 - You will run the following commands below in order to convert the .ps1 file to an EXE
     `Install-Module ps2exe -Scope CurrentUser`
     `-ExecutionPolicy Bypass -Command "ps2exe .\NASLogout.ps1 .\NASAccess.exe -iconFile .\tcs.ico"`
-      - The .\ is telling powershell to run and deposit the files in the current running directory, either put the files needed in the current running directory or update the command to reflect the directory the files are in
+  
+   - The .\ is telling powershell to run and deposit the files in the current running directory, either put the files needed in the current running directory or update the command to reflect the directory the files are in
